@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(img/img4.webp);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-family: 'Sofia';
+    font-size: 200px;
+    text-align: center;
+    color:purple;
+    text-shadow: 5px 5px 5px black;
+    margin: 0;
+}
+
+.start-btn {
+    padding: 10px 40px;
+    background-color: rgb(14, 189, 252);
+    border-radius: 8px;
+    font-size: 30px;
+    /* justify-self: center; */
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    text-align: center;
+}
+
+.start-btn:hover {
+    background-color: rgb(143, 221, 249);
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.display_none {
+    display: none;
+
+}
+
+
+
+
+
+
+.bg_opacity {
+    background: rgba(76, 175, 80, 0.3);
+  
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.images_flex {
+    text-align: center;
+    margin-top: 17px;
+}
+
+.Name {
+   
+    color: black;
+    font-size: 50px;
+    
+    font-weight: bolder;
+    margin: 0;
+   
+    border-radius: 5px;
+    background-color: rgb(254, 254, 254,0.6);
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(253, 0, 0);
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+   
+  }
+
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+  .option-item{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+  }
+  li{
+    list-style: none;
+    background-color: rgba(12, 12, 12, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  li:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  /* #blink {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d38be;
+    transition: 0.5s;
+} */
+.blink {
+  animation: blinker 1.0s linear infinite;
+  box-shadow: 2px 2px 5px black;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0.3;
+      
+  }
+}
+
+.image-close{
+
+    position: relative;
+    
+}
+
+.close{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  color: red;
+  position: absolute;
+  top: 20%;
+  right: 37%;
+ 
+}
+.close:hover{
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}

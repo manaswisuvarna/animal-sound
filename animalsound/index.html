@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="container ">
+        <div>
+            <h1>Animals</h1>
+        </div>
+        <div class="btn ">
+            <button class="start-btn blink" onclick="pressed()">Start Over</button>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="imgs bg_opacity" id="someimage" style=" position: relative;">
+
+            <div>
+
+                <ul class="option-item">
+                    <li class="item " id="dog" onclick="currentkey(1)">dog</li>
+                    <li class="item" id="cat" onclick="currentkey(2)">cat</li>
+                    <li class="item" id="" onclick="currentkey(3)">cow</li>
+                    <li class="item" id="" onclick="currentkey(4)">sheep</li>
+                    <li class="item" id="" onclick="currentkey(5)">pig</li>
+                    <li class="item" id="" onclick="currentkey(6)">horse</li>
+                    <li class="item" id="" onclick="currentkey(7)">goat</li>
+                    <li class="item" id="" onclick="currentkey(8)">donkey</li>
+                </ul>
+                <ul class="option-item">
+                    <li class="item" id="dog" onclick="currentkey(9)">lion</li>
+                    <li class="item" id="cat" onclick="currentkey(10)">chimpanzee</li>
+                    <li class="item" id="" onclick="currentkey(11)">tiger</li>
+                    <li class="item" id="" onclick="currentkey(12)">rhinoceros</li>
+                    <li class="item" id="" onclick="currentkey(13)">leopard</li>
+                    <li class="item" id="" onclick="currentkey(14)">elephant</li>
+                    <li class="item" id="" onclick="currentkey(15)">bear</li>
+                    <li class="item" id="" onclick="currentkey(16)">kangaroo</li>
+                </ul>
+
+
+            </div>
+
+            <div class="images_flex  ">
+                <!-- domestic -->
+
+
+                <div class=" myslides  fade   ">
+                    <img src="img/dog.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">Dog</p>
+                   
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/cat.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">cat</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/cow.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">cow</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/sheep.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">sheep</p>
+                  
+                </div>
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/pig.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">pig</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/horse.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">horse</p>
+                 
+                </div>
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/goat.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">goat</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/donkey.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">donkey</p>
+                   
+                </div>
+
+
+                <!-- wild -->
+
+                <div class=" myslides  fade   ">
+                    <img src="img/lion.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">lion</p>
+                   
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/chimpu.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">chimpanzee</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/tiger.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">tiger</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/rino.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">rhinoceros</p>
+                  
+                </div>
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/leopard.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">leopard</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/elephant.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">elephant</p>
+                 
+                </div>
+
+                <div class=" myslides  fade images_flex   ">
+                    <img src="img/bear.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">bear</p>
+                    
+                </div>
+
+
+                <div class=" myslides  fade images_flex  ">
+                    <img src="img/kan.png" alt="" width="400px" height="400px" class="inner_div">
+                    <p class="Name">kangaroo</p>
+                   
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
